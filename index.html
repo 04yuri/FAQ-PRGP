@@ -111,7 +111,6 @@
             text-align: center;
             border-top: 1px solid #dee2e6;
         }
-        /* Estilo para a lista de documentos */
         .lista-docs {
             list-style: none;
             padding: 0;
@@ -121,14 +120,16 @@
             background: #f8f9fa;
             padding: 10px;
             border-radius: 4px;
+            border-left: 3px solid #005a9c;
         }
         .lista-docs a {
             text-decoration: none;
             color: #005a9c;
             font-weight: bold;
+            display: block;
         }
         .lista-docs a:hover {
-            text-decoration: underline;
+            color: #1e466e;
         }
 
         @media print {
@@ -141,8 +142,8 @@
 <div class="documento">
     <h1>FAQ do Programa de Residência em Gestão Pública (PRGP)</h1>
     <div class="subtitulo">
-        Base normativa: Regimento Interno, Normas de Conduta, Cronograma 2026, Lei 17.673/2021, Portal SEGES, Dados das Secretarias<br>
-        Atualização: Maio/2026 | Versão 3.0 (completa)
+        Base normativa: Regimento Interno, Normas de Conduta, Cronograma 2026, Lei 17.673/2021, Portal SEGES<br>
+        Atualização: Maio/2026 | Versão 3.1
     </div>
 
     <!-- SUMÁRIO -->
@@ -158,17 +159,17 @@
         <li><a href="#afastamentos">6. Afastamentos e desligamento</a></li>
         <li><a href="#renovacao">7. Renovação do contrato</a></li>
         <li><a href="#conduta">8. Conduta e canais de denúncia</a></li>
-        <li><a href="#anexo">9. Anexo – Cronograma 2026</a></li>
+        <li><a href="#anexo">9. Anexo – Cronograma de Eventos Formativos 2026</a></li>
     </ul>
 
     <!-- SEÇÃO DE DOCUMENTOS (PDFS) -->
     <h2 id="documentos">Documentos e Normas Oficiais</h2>
-    <p style="font-size: 0.9rem; margin-bottom: 10px;">Clique nos links abaixo para visualizar os documentos originais (abrirão em uma nova guia):</p>
+    <p style="font-size: 0.9rem; margin-bottom: 10px;">Clique nos links abaixo para abrir os arquivos em uma nova guia:</p>
     <ul class="lista-docs">
-        <li>📄 <a href="Info%20Secr%20PMSP.pdf" target="_blank">Informações das Secretarias PMSP</a></li>
-        <li>📄 <a href="Normas%20de%20conduta%20do%20PRGP.pdf" target="_blank">Normas de Conduta do PRGP</a></li>
-        <li>📄 <a href="5.0%20REGIMENTO%20INTERNO%20DO%20PRGP.pdf" target="_blank">Regimento Interno do PRGP (v5.0)</a></li>
-        <li>📄 <a href="Eventos%20Formativos%20-%20PRGP.pdf" target="_blank">Cronograma de Eventos Formativos</a></li>
+        <li><a href="Info_Secr_PMSP.pdf" target="_blank">📄 Informações das Secretarias PMSP</a></li>
+        <li><a href="Normas_conduta_PRGP.pdf" target="_blank">📄 Normas de Conduta do PRGP</a></li>
+        <li><a href="REGIMENTO_PRGP.pdf" target="_blank">📄 Regimento Interno do PRGP</a></li>
+        <li><a href="Eventos.pdf" target="_blank">📄 Cronograma de Eventos Formativos</a></li>
     </ul>
 
     <!-- SIGLAS -->
@@ -207,18 +208,57 @@
         <thead><tr><th>Carga horária semanal</th><th>Valor mensal</th></tr></thead>
         <tbody><tr><td>40 horas</td><td>R$ 3.449,49</td></tr><tr><td>30 horas</td><td>R$ 2.587,12</td></tr></tbody>
     </table>
-    <div class="destaque">Fonte: Regimento Interno, seção 1.7, p.6 e seção 4.1, inciso I, p.12</div>
+    <div class="destaque">Fonte: Regimento Interno, seção 1.7 e seção 4.1</div>
 
     <h3>2. Qual o valor do auxílio-refeição?</h3>
     <p><strong>R$ 30,22 por dia</strong></p>
-    <div class="destaque">Fonte: Regimento Interno, seção 1.7, p.7 e seção 4.1, inciso I, p.12</div>
 
-    <!-- O restante do conteúdo permanece o mesmo... -->
-    
+    <!-- 2. JORNADA -->
+    <h2 id="jornada">2. Jornada e frequência</h2>
+    <h3>8. Carga horária semanal?</h3>
+    <p>30 ou 40h, definida na matrícula.</p>
+
+    <!-- 3. DIREITOS E DEVERES -->
+    <h2 id="direitos">3. Direitos e deveres</h2>
+    <h3>12. Principais direitos?</h3>
+    <ul><li>Bolsa + auxílios</li><li>30 dias de recesso após 12 meses</li><li>Certificado (se cumprir requisitos)</li><li>Suspensão por gestação (180 dias)</li></ul>
+
+    <!-- 4. FORMAÇÃO -->
+    <h2 id="formacao">4. Formação e TCR</h2>
+    <h3>18. Horas obrigatórias de formação?</h3>
+    <p><strong>80 horas</strong> no primeiro ano.</p>
+
+    <!-- 5. AVALIAÇÃO -->
+    <h2 id="avaliacao">5. Avaliação e aprovação</h2>
+    <h3>24. Nota mínima?</h3>
+    <p>≥ 6 (Parcialmente satisfatório ou Satisfatório). Nota inferior = desligamento.</p>
+
+    <!-- 6. AFASTAMENTOS -->
+    <h2 id="afastamentos">6. Afastamentos e desligamento</h2>
+    <h3>26. Afastamentos permitidos (com bolsa)?</h3>
+    <table>
+        <tr><th>Motivo</th><th>Duração</th></tr>
+        <tr><td>Gestante</td><td>180 dias</td></tr>
+        <tr><td>Licença médica</td><td>15 dias a cada 6 meses</td></tr>
+        <tr><td>Falecimento (família direta)</td><td>8 dias</td></tr>
+    </table>
+
+    <!-- 7. RENOVAÇÃO -->
+    <h2 id="renovacao">7. Renovação do contrato</h2>
+    <p>O contrato pode ser renovado após 12 meses por mais 12 meses (totalizando 24 meses).</p>
+
+    <!-- 8. CONDUTA -->
+    <h2 id="conduta">8. Conduta e canais de denúncia</h2>
+    <h3>35. Onde denunciar irregularidade?</h3>
+    <p>Canal SP156 (opção 5) ou e-mail da Ouvidoria: ogm@prefeitura.sp.gov.br.</p>
+
+    <!-- 9. ANEXO -->
+    <h2 id="anexo">9. Anexo – Cronograma de Eventos Formativos 2026</h2>
+    <div class="atencao">Consulte o arquivo <strong>Eventos.pdf</strong> no topo da página para as datas detalhadas das aulas presenciais na EMASP.</div>
+
     <div class="footer">
-        <strong>Canal oficial de comunicação:</strong> residenciagestaopublica@prefeitura.sp.gov.br<br>
-        Fonte: Regimento Interno, Normas de Conduta, Cronograma 2026, Lei 17.673/2021, Portal SEGES, Dados das Secretarias – PMSP<br>
-        Documento gerado em maio/2026 – Versão 3.0
+        <strong>Contato Administrativo:</strong> residenciagestaopublica@prefeitura.sp.gov.br<br>
+        Documento gerado em maio de 2026.
     </div>
 </div>
 </body>
